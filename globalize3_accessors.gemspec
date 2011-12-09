@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "TODO",
     "VERSION",
+    "globalize3_accessors.gemspec",
     "lib/globalize/active_record/accessors.rb",
     "lib/globalize3_accessors.rb",
     "spec/globalize3_accessors_spec.rb",
