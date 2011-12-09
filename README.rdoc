@@ -1,6 +1,31 @@
 = globalize3_accessors
 
-Description goes here.
+Provides localized accessors for globalize3
+
+Inspired by https://github.com/astropanic/easy_globalize2_accessors
+
+== Example
+
+A model definition like this:
+
+  class Post < ActiveRecord::Base
+    translates :title, :content
+    locale_accessors :en, :fr
+  end
+  
+will provide:
+
+  #title_en
+  #title_en=
+  #title_fr
+  #title_fr=
+  #content_en
+  #content_en=
+  #content_fr
+  #content_fr=
+  
+The regular title and content accessors are unaffected
+  
 
 == Contributing to globalize3_accessors
  
