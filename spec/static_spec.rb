@@ -1,6 +1,6 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
-describe "Globalize3Accessors" do
+describe "StaticAccessors" do
   describe Post.new do
     it { should respond_to(:title_en) }
     it { should respond_to(:title_fr) }
