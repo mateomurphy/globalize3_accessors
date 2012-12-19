@@ -30,7 +30,10 @@ Gem::Specification.new do |s|
     "globalize3_accessors.gemspec",
     "lib/globalize/active_record/accessors.rb",
     "lib/globalize3_accessors.rb",
+    "spec/dynamic_spec.rb",
+    "spec/matcher_spec.rb",
     "spec/spec_helper.rb",
+    "spec/static_spec.rb",
     "spec/support/models.rb",
     "spec/support/schema.rb"
   ]
