@@ -8,7 +8,7 @@ describe "DynamicAccessors" do
     it { should respond_to(:body=) }
     it { should respond_to(:body_en=) }
     it { should respond_to(:body_fr=) }
-    it { should_not respond_to(:published_en) }
+    it { should respond_to(:published_en) }
   end
   
   describe "Getters" do

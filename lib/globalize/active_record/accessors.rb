@@ -21,11 +21,17 @@ module Globalize
         # Define a set of accessors for the given attribute and locale
         def define_localized_accessor(attr_name, locale)
           define_method :"#{attr_name}_#{locale}" do
-            read_attribute(attr_name, :locale => locale)
+            Globalize.with_locale(locale) do
+              send attr_name
+            end
+            #read_attribute(attr_name, :locale => locale)
           end
 
           define_method :"#{attr_name}_#{locale}=" do |val|
-            write_attribute(attr_name, val, :locale => locale)
+            Globalize.with_locale(locale) do
+              send :"#{attr_name}=", val
+            end
+            #write_attribute(attr_name, val, :locale => locale)
           end          
         end
       end
@@ -44,12 +50,16 @@ module Globalize
             end
           end
   
+          def exists?
+            instance.respond_to?(attribute)
+          end
+
           def translated?
             instance.translated?(attribute)
           end
   
           def match?
-            @attribute != nil && translated?
+            @attribute != nil && exists?
           end
           
           def define
