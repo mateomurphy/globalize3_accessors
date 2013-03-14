@@ -9,7 +9,7 @@ group :development do
   gem 'activerecord', ">= 3.1"
   gem 'globalize3'
   gem 'sqlite3'
-  gem "rspec", "~> 2.12.0"
-  gem "bundler", "~> 1.2.3"
-  gem "jeweler", "~> 1.8.4"
+  gem "rspec"
+  gem "bundler"
+  gem "jeweler"
 end
