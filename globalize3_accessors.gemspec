@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "globalize3_accessors"
-  s.version = "1.0.1"
+  s.version = "1.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Mateo Murphy"]
-  s.date = "2013-01-18"
+  s.date = "2013-03-14"
   s.description = "Provides easy to use accessors for globalize3"
   s.email = "mateo.murphy@gmail.com"
   s.extra_rdoc_files = [
@@ -40,7 +40,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/mateomurphy/globalize3_accessors"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.24"
+  s.rubygems_version = "1.8.25"
   s.summary = "Easy accessors for globalize3"
 
   if s.respond_to? :specification_version then
@@ -51,26 +51,26 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<activerecord>, [">= 3.1"])
       s.add_development_dependency(%q<globalize3>, [">= 0"])
       s.add_development_dependency(%q<sqlite3>, [">= 0"])
-      s.add_development_dependency(%q<rspec>, ["~> 2.12.0"])
-      s.add_development_dependency(%q<bundler>, ["~> 1.2.3"])
-      s.add_development_dependency(%q<jeweler>, ["~> 1.8.4"])
+      s.add_development_dependency(%q<rspec>, [">= 0"])
+      s.add_development_dependency(%q<bundler>, [">= 0"])
+      s.add_development_dependency(%q<jeweler>, [">= 0"])
     else
       s.add_dependency(%q<activesupport>, [">= 3.1"])
       s.add_dependency(%q<activerecord>, [">= 3.1"])
       s.add_dependency(%q<globalize3>, [">= 0"])
       s.add_dependency(%q<sqlite3>, [">= 0"])
-      s.add_dependency(%q<rspec>, ["~> 2.12.0"])
-      s.add_dependency(%q<bundler>, ["~> 1.2.3"])
-      s.add_dependency(%q<jeweler>, ["~> 1.8.4"])
+      s.add_dependency(%q<rspec>, [">= 0"])
+      s.add_dependency(%q<bundler>, [">= 0"])
+      s.add_dependency(%q<jeweler>, [">= 0"])
     end
   else
     s.add_dependency(%q<activesupport>, [">= 3.1"])
     s.add_dependency(%q<activerecord>, [">= 3.1"])
     s.add_dependency(%q<globalize3>, [">= 0"])
     s.add_dependency(%q<sqlite3>, [">= 0"])
-    s.add_dependency(%q<rspec>, ["~> 2.12.0"])
-    s.add_dependency(%q<bundler>, ["~> 1.2.3"])
-    s.add_dependency(%q<jeweler>, ["~> 1.8.4"])
+    s.add_dependency(%q<rspec>, [">= 0"])
+    s.add_dependency(%q<bundler>, [">= 0"])
+    s.add_dependency(%q<jeweler>, [">= 0"])
   end
 end
 
