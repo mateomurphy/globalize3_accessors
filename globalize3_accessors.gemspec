@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "globalize3_accessors"
-  s.version = "1.0.2"
+  s.version = "1.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Mateo Murphy"]
-  s.date = "2013-03-14"
+  s.date = "2013-03-19"
   s.description = "Provides easy to use accessors for globalize3"
   s.email = "mateo.murphy@gmail.com"
   s.extra_rdoc_files = [
